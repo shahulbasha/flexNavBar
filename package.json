@@ -1,0 +1,15 @@
+{
+  "name": "cssflex2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shahul",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0"
+  }
+}
