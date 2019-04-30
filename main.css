@@ -50,8 +50,48 @@ a:hover {
 .flex-nav .social {
   flex: 1;
 }
+.toggleNav {
+  display: none;
+}
 
+img {
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  border: 0;
+}
+
+section,
+footer {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-weight: 100;
+  margin: 20px 0;
+}
 @media all and (max-width: 1000px) {
+  .toggleNav {
+    display: block;
+  }
+
+  input {
+    padding: 10px;
+    border: 0;
+    margin: 10px;
+    width: 33%;
+  }
+
+  ul.flexlist {
+    display: none;
+  }
+  ul.show {
+    display: flex;
+    transition: all 0.5s;
+  }
+
   .flex-nav ul {
     flex-wrap: wrap;
   }
@@ -66,15 +106,43 @@ a:hover {
 }
 
 @media all and (max-width: 500px) {
-  .flex-nav ul {
-    flex-wrap: wrap;
+  .toggleNav {
+    display: block;
   }
 
   .flex-nav li {
-    flex: 1 1 100%;
+    flex-basis: 100%;
   }
 
-  .flex-nav .social {
-    flex: 1 1 33.33%;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-nav {
+    order: -10;
+  }
+
+  .image-section {
+    order: 1;
+  }
+
+  footer {
+    order: 2;
+  }
+
+  ul.flexlist {
+    display: none;
+  }
+  ul.show {
+    display: flex;
+    transition: all 0.5s;
+  }
+
+  input {
+    padding: 10px;
+    border: 0;
+    margin: 10px;
+    width: 100%;
   }
 }
